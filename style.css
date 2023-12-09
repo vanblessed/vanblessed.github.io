@@ -1,0 +1,58 @@
+/*	nome = stile applicato <body>
+	#nome = <p id="nome">
+	.nome = <div class="nome">
+*/
+a:link {color: cyan;}
+a:visited {color: cyan;}
+a:hover {color: green;}
+a:active {color: red;}
+div {
+        width: 480px;
+		margin: auto;
+    }
+/* Media query for phone screens */
+@media only screen and (max-width: 600px)
+{
+   div {
+         width: 100%;
+        }
+    }
+
+body, h1, h2, h3, h4, h5, h6
+	{  font-family: Verdana, Geneva, sans-serif;
+	}
+head
+	{
+
+	}
+body
+	{	background-color:#152030;
+      	color:#EEEEEE;
+	}
+#titolo
+	{	font-family:serif;
+		font-size: 30px;
+		text-align: center;
+  		line-height: 0.1;
+		margin: 10px;
+		margin-top: 20px;
+	}
+#sottotitolo
+	{	font-family: serif;
+		font-size: 20px;
+		text-align: center;
+		margin: 10px;
+		margin-top: 20px;
+    }
+#courier
+	{	font-family: monospace}
+.titolo
+	{	border-style:dotted;
+		border-color:yellow;
+	}
+.categorie
+	{	text-align:center;
+	}
+.justify
+	{  	text-align:justify;
+	}
