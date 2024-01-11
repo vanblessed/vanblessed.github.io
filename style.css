@@ -11,7 +11,7 @@ div {
 		margin: auto;
     }
 /* Media query for phone screens */
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 800px)
 {
    div {
          width: 100%;
