@@ -1,164 +1,328 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/style.css">
-<head>
-	<title>VanBlessed Digital Trails</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<a href="/index.html">VanBlessed Digital Trails</a>
-	  <hr style="color:yellow"; size="1">
-    <div><h1 id="top">Golden Lap</h1>
-  	    <h3>Funselektor - Strelka Games (2024)</h3>
-   		<h2>Indice</h2>
-		<ul>
-			<li><a href="#intro">introduzione</a></li>
-			<li><a href="#00">prepariamo la mod</a></li>
-			<li><a href="#S01">Stagione 01 - costruiamo la squadra</a></li>
-			<li><a href="#S01E01">S01E01 - Circuit de Casino (MCO)</a></li>
-			<!--<li><a href="#S01E02">S01E02 - Hopkins Boot (USA)</a></li>
-			<li><a href="#S01E03">S01E03 - Isivinini (ZAF)</a></li>
-			<li><a href="#S01E04">S01E04 - Francis Hollow (GBR)</a></li>
-			<li><a href="#S01E05">S01E05 - Schwarzwaldring (DEU)</a></li>
-			<li><a href="#S01E06">S01E06 - Potenza (ITA)</a></li>
-			<li><a href="#S01E07">S01E07 - Retorcido (ESP)</a></li>
-			<li><a href="#S01E08">S01E08 - Muttonchop (GBR)</a></li>
-			<li><a href="#S01E09">S01E09 - Fascer Park (CAN)</a></li>
-			<li><a href="#S01E10">S01E10 - Gran Lago (ARG)</a></li>
-			-->
-		</ul>
-<hr>
-<h3 id="intro">introduzione</h3>
-		<p>Ho acquistato <a href="https://www.funselektor.com/goldenlap">Golden Lap</a> dopo aver giocato ad <a href="https://www.artofrally.com/">Art of Rally</a>, sempre di <a href ="https://www.funselektor.com/">Funselektor</a>.<br>
-		Mi è piaciuto lo stile minimale e la sensazione arcade ma non troppo di Art of Rally, e volevo riprovare un gestionale a tema F1 dopo che anni fa avevo lasciato perdere Motorsport Manager (2? 3?) per Android.</p>
-<p>	<b>Golden Lap in due parole</b><br>
-	<i>di seguito userò il plurale sovraesteso, ma nel gioco i piloti, gli ingegneri e i caposquadra sono anche di genere femminile.</i><br>
-		Si sceglie una scuderia, si compone la squadra in base ai soldi a disposizione, si sceglie uno sponsor principale, si inizia la stagione composta da 10 Gran Premi (GP).<br>
-		Prima di ogni GP si può migliorare la propria auto o spiare le altre squadre.<br>
-		Prima della gara ci sono le qualifiche in cui si possono regolare ulteriormente le parti del la propria auto.<br>
-		Durante la gara si gestiscono gli stili di guida dei piloti, i consumi di gomme e di carburante, i pit stop e gli eventuali rallentamenti pet bandiere gialle o rosse.<br>
-		Alla fine della gara piloti e squadra ricevono punti per la classifica in base al piazzamento e soldi in base ai criteri degli sponsor, e si ricomincia con una nuova gara.<br>
-		Durante le gare i piloti possono infortunarsi o lasciarci le penne, e la squadra dovrà sostituire il pilota.<br>
-		Alla fine della stagione la squadra riceve soldi in base al piazzamento e ai criteri degli sponsor, e inizia una nuova stagione.<br>
-		Nella nuova stagione si riparte confermando i componenti della squadra a costo 0, oppure ingaggiando del nuovo personale.
-		</p>
-		<hr>
-<h3 id="00">prepariamo la mod</h3>
-	Dopo aver giocato a Golden Lap per circa 25 ore ho deciso di affrontare la run definitiva: partire con la scuderia con meno fondi iniziali e vedere dove arriverò dopo 10 stagioni.<br>
-		<p>	Gli sviluppatori hanno chiaramente reso semplice il modding, creando pure <a href="https://funselektor.notion.site/Golden-Lap-Modding-Documentation">una guida</a> molto dettagliata.<br>
-	Modificando i file .json si possono cambiare molti attributi delle squadre, dei piloti, degli ingegneri e dei caposquadra, oltre creare un calendario di gare non random come nel gioco base.<br>
-	Sono modificabili anche i file .psd che permettono di personalizzare forme e livree delle monoposto, delle divise ma anche dei ritratti di piloti, ingegneri e caposquadra, che nella versione base sono stilizzati. Anche i loghi delle scuderie sono personalizzabili.<br>
-	Per capire il livello di personalizzazione fatevi un giro su <a href="https://steamcommunity.com/app/2052040/workshop/">Steam Workshop</a> e troverete molte mod, alcune delle quali hanno ricreato le decadi "reali" dagli anni 70 ai giorni nostri con un lavoro certosino.<br>
-</p>
-<p>
-	<b>La VB Racing</b><br>
-	Con un po' di smanettamento su GIMP ho creato la grafica per la mia squadra: VB Racing.<br>
-	Ne sono abbastanza soddisfatto, non saprei davvero fare di meglio.<br>
-		<img src="VB.png" width="250"><br>
-		<img src="CarVB.png" width="250"><br>
-		<img src="SuitVB.png" width="250">		
-</p>
-<a href="#top">torna in cima</a>
-		<hr>
-<h3 id="S01">Stagione 01 - costruiamo la squadra</h3>
-	<p>	È il 1970, la mia prima stagione.</p>
-	<p>	Con una certa emozione seleziono la mia squadra tra le 10 disponibili e cerco di immaginarmi dove riuscirò ad arrivare...<br>
-		<a href=00a.jpg target="_blank"><img src="00a.jpg" width="400"></a><br>
-Rapido elenco di equivalenza tra nomi di fantasia e nomi reali delle squadre:<br>
-		<ul>
-			<li>Ezzolini = Ferrari</li>
-			<li>LaBrahn = McLaren</li>
-			<li>Chapman = Lotus</li>
-			<li>Weyland = Tyrrell</li>
-			<li>Hemlock = Hesketh</li>
-			<li>Pope = Williams</li>
-			<li>Bancroft = Brabham</li>
-			<li>Vernier = Ligier</li>
-			<li>April = March</li>
-			<li>Night = Shadow <i>che io ho rilevato, modificandola nella mia VB Racing</i></li>
-		</ul>
-		</p>
-		<p>
-		Con i pochi soldi che abbiamo è difficile mettere insieme una squadra, anche perché quasi tutti i piloti medio-bassi sono già stati ingaggiati dalle altre scuderie. È il problema di iniziare con la squadra più scarsa: hai pochi soldi e scegli per ultimo.<br></p>
-<p>Dopo aver esplorato un po' gli <i>avanzi</i>, abbiamo due opzioni:<br>
-		1) ingaggiare un pilota decente come Piet Cilliers che da solo costa 15$, prendere un buon Mahler come ingegnere decente e tutto il peggio possibile che avanza, e stare su un design dell'auto conservativo<br>
-				<a href=00b.jpg target="_blank"><img src="00b.jpg" width="400"></a><br>
-	<br>
-		2) ingaggiare lo scarsetto ma promettente Artie Von Heim per 9$, mantenere Helm come ingegnere (anche perché è rimasto ben poco ed è meglio evitare un ingegnere incapace) e il resto lo si suddivide tra pilota e caposquadra e un design dell'auto equilibrato<br>
-				<a href=00c.jpg target="_blank"><img src="00c.jpg" width="400"></a></p>
-<p>
-	Alla fine spendiamo meno per i piloti e di più per il resto della squadra. I risultati si fanno lavorando assieme! Avanzano soldi per scegliere il design dell'auto equilibrato (14$), che costa più del conservativo (12$) ma che si può potenziare maggiormente durante la stagione.<br>
-	</p>
-<p>
-	È il momento degli sponsor: stiamo con i piedi per terra e ci affiliamo a <b>MetalTubing</b> (quello più scarso) che mi garantisce maggiori entrate fisse ad ogni gara (3$), ma meno bonus in base al piazzamento (mi basta un 12° posto su 20 auto, a differenza di altri sponsor che chiedono un 8° o un 6° posto).
-</p>
-		<p>Ed eccoci qui, la VB Racing appena formata, pronta per affrontare la prima stagione della sua storia!<br>
-				<a href=00d.jpg target="_blank"><img src="00d.jpg" width="400"></a></p>
-		
-<p>
-	Prima di tuffarci nella stagione, un rapido elenco di equivalenza tra nomi di fantasia e nomi reali dei circuiti:<br>
-<li>Autódromo Gran Lago = Buenos Aires (ARG)</li>
-<li>Circuit de Casino = Monaco (MCO)</li>
-<li>Circuit Eerste = Zolder (BEL)</li>
-<li>Fascar Park = Mosport (CAN)</li>
-<li>Francis Hollow = Brands Hatch (GBR)</li>
-<li>Hopkins Boot = Watkins Glen (USA)</li>
-<li>Isivinini = Kyalami (ZAF)</li>
-<li>Muttonchop = Silverstone (GBR)</li>
-<li>Noordzee = Zandvoort (NED)</li>
-<li>Ondasrolando = Interlagos (BRA)</li>
-<li>Potenza = Monza (ITA)</li>
-<li>Retorcido = Jarama (ESP)</li>
-<li>Sake Speedway = Fuji (JAP)</li>
-<li>Schwarzwaldring = Hockenheim (GER)</li>
-<li>Stretto = Imola (ITA)</li>
-</i></p>
-		<a href="#top">torna in cima</a>
-		<hr>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <head>
+        <title>VanBlessed Digital Trails</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="/index.html">VanBlessed Digital Trails</a>
+        <hr style="color:yellow;" size="1">
 
-<h3 id="S01E01">S01E01 - Circuit de Casino</h3>
-		<p>
-			Iniziamo male: il primo circuito in cui verosimilmente partiremo nella metà inferiore dello schieramento è quello in cui è più difficile fare sorpassi. Servirebbe partire con uno sterzo migliore, ma abbiamo finito tutti i soldi per costruire una squadra decente e non possiamo spenderne altri prima della gara. Ci affideremo al nostro ingegnere e alla sua capacità di regolare al meglio le auto durante le qualifiche. Poi chissà, se ci fossero incidenti, o se iniziasse a piovere, magari potremmo guadagnare posizioni con una buona strategia...</p>
-		<p><b>L'obiettivo minimo</b> per questa prima gara è chiudere almeno al 12° posto per incassare i soldi bonus dello sponsor. Inutile pensare a chiudere nei primi 10 per dei punti iridati.</p>
-		<b>QUALI</b>
-<p>Usciremo sempre come prima squadra dai box: avere pista libera aiuta a fare tempi migliori, ma non è il fine della prima parte delle qualifiche anche perché la pista non è ben gommata.</p>
-		<a href=01a.jpg target="_blank"><img src="01a.jpg" width="400"></a><br>
-<p>No, l'obiettivo è fare più giri possibili per prendere confidenza con il tracciato e cercare di migliorare l'auto il più possibile: un giro di lancio (OUT lap), un giro cronometrato, un giro di rientro ai box (IN lap).</p>
-<p>Dopo il primo giro siamo P6 [VHM] e P7 [ROD]. Un risultato molto positivo, soprattutto perché su questo tracciato è difficile sorpassare: partire tra i mid-team ci permetterebbe di chiudere almeno in P12, risultato minimo per il pagamento degli sponsor.</p>
-<p>Ma siamo solo al primo giro delle qualifiche del primo GP, andiamo con ordine.</p>
-<p>Dopo un giro è il momento di regolare l'auto: le caratteristiche del circuito mi fanno propendere per potenziare lo sterzo ovviamente. E così farò per il resto delle qualifiche, fino ad arrivare al Golden Tune, cioè ad aver migliorato al massimo questo componente dell'auto.</p>
-		<a href=01b.jpg target="_blank"><img src="01b.jpg" width="400"></a><br>
-<p>Alcune guide suggeriscono di migliorare prima la parte meno perfomante della propria auto, ma io preferisco partire prima dal tracciato e poi eventualmente sistemare difetti dell'auto.</p>
-<p>Dal secondo giro in poi inizia ad esserci traffico, e se si rimane imbottigliati non è detto che i propri tempi migliorino. Ma poco importa, perché è tutta esperienza da riportare ai box, per poi migliorare l'auto e ripartire di nuovo!</p>
-		<a href=01c.jpg target="_blank"><img src="01c.jpg" width="400"></a><br>
-<p>Dopo il 2° giro siamo P5 [VHM] e P8 [ROD], il che mi fa ben sperare sia per le qualifiche sia per la gara.</p>
-<p>Al 3° giro VHM non migliora ed è P8 (non era <b>concentrato</b>, una delle caratteristiche base dei piloti oltre alla velocità) mentre ROD arriva a P6. Anche le altre squadre stanno migliorando le loro auto: bisogna stare al passo!</p>
-<p>Ai box l'ingegner Mahler fa raggiungere a VHM e ROD il Golden Tune sullo sterzo e inizia a potenziare l'accelerazione, altro tratto fondamentale per questo circuito.</p>
-		<a href=01d.jpg target="_blank"><img src="01d.jpg" width="400"></a><br>
-<p>Dopo 4 giri siamo P10 [VHM] e P11 [ROD]. C'è giusto il tempo di un'ultima regolazione e di un ultimo fondamentale giro: l'ideale sarà partire all'ultimo momento utile, con pista più gommata possibile ma evitando il traffico, altrimenti sarà un giro sprecato e finiremo in fondo allo schieramento.</p>
-<a href=01e.jpg target="_blank"><img src="01e.jpg" width="400"></a><br>
-		<p>All'ultimo pit [ROD] arriva quasi al Golden Tune prue dell'accelerazione, e ora ha un'auto più competitiva di [VHM]. La sfida interna si deciderà all'ultimo giro di qualifiche.</p>
-<p>Ci vogliono circa 2'30'' per fare un OUT lap prima di lanciarsi nel giro di qualifiche, bisogna stare attenti anche a come si comportano le altre auto.</p>
-		<a href=01f.jpg target="_blank"><img src="01f.jpg" width="400"></a><br>
-<p>VHM parte prima con pista abbastanza libera e chiude inizialmente P9 per poi essere sorpassato da Villalba [VIL] su Hemlock, e dal compagno di squadra ROD partito subito dopo che ha chiuso un giro <b>concentrato</b>.</p>
-<p>Risultato finale:
-<li>P9 ROD</li>
-<li>P11 VHM</li></p>
-		<a href=01g.jpg target="_blank"><img src="01g.jpg" width="400"></a><br>
-<p><b>Le dichiarazioni a caldo:</b><br>
-Prima delle qualifiche non ci aspettavamo di certo di essere a metà schieramento, anche se i primi giri ci hanno gasato non poco!<br>
-Durante le qualifiche non siamo riusciti a mettere a punto l'auto e il divario tecnico si è fatto sentire sul lungo periodo.<br>
-Peccato per l'ultimo giro di VHM, poteva migliorare ulteriormente la sua posizione, ma ci ha pensato ROD a piazzare una nostra auto in top 10.<br>
-Ora si tratta di creare una strategia ottimale per la gara di domani: la gara si deciderà ai box.</p>
+        <div>
+            <h1 id="top">Golden Lap</h1>
+            <h3>Funselektor - Strelka Games (2024)</h3>
+            <h2>Indice</h2>
+            <ul>
+                <li><a href="#intro">introduzione</a></li>
+                <li><a href="#00">prepariamo la mod</a></li>
+                <li><a href="#S01">Stagione 01 - costruiamo la squadra</a></li>
+                <li><a href="#S01E01">S01E01 - Circuit de Casino (MCO)</a></li>
+                <!--
+                <li><a href="#S01E02">S01E02 - Hopkins Boot (USA)</a></li>
+                <li><a href="#S01E03">S01E03 - Isivinini (ZAF)</a></li>
+                <li><a href="#S01E04">S01E04 - Francis Hollow (GBR)</a></li>
+                <li><a href="#S01E05">S01E05 - Schwarzwaldring (DEU)</a></li>
+                <li><a href="#S01E06">S01E06 - Potenza (ITA)</a></li>
+                <li><a href="#S01E07">S01E07 - Retorcido (ESP)</a></li>
+                <li><a href="#S01E08">S01E08 - Muttonchop (GBR)</a></li>
+                <li><a href="#S01E09">S01E09 - Fascer Park (CAN)</a></li>
+                <li><a href="#S01E10">S01E10 - Gran Lago (ARG)</a></li>
+                -->
+            </ul>
+            <hr>
 
-<b>RACE</b>
-		<p>[anticipazioni]</p>
-		Sorpresa! Piove. E pioverà tutta la gara.<br>
-		<a href=01h.jpg target="_blank"><img src="01h.jpg" width="400"></a><br>
+            <h3 id="intro">introduzione</h3>
+            <p>
+                Ho acquistato <a href="https://www.funselektor.com/goldenlap">Golden Lap</a> dopo aver giocato ad <a href="https://www.artofrally.com/">Art of Rally</a>, sempre di <a href ="https://www.funselektor.com/">Funselektor</a>.<br>
+                Mi è piaciuto lo stile minimale e la sensazione arcade ma non troppo di Art of Rally, e volevo riprovare un gestionale a tema F1 dopo che anni fa avevo lasciato perdere Motorsport Manager (2? 3?) per Android.
+            </p>
+            <p>
+                <b>Golden Lap in due parole</b><br>
+                <i>di seguito userò il plurale sovraesteso, ma nel gioco i piloti, gli ingegneri e i caposquadra sono anche di genere femminile.</i><br>
+                Si sceglie una scuderia, si compone la squadra in base ai soldi a disposizione, si sceglie uno sponsor principale, si inizia la stagione composta da 10 Gran Premi (GP).<br>
+                Prima di ogni GP si può migliorare la propria auto o spiare le altre squadre.<br>
+                Prima della gara ci sono le qualifiche in cui si possono regolare ulteriormente le parti del la propria auto.<br>
+                Durante la gara si gestiscono gli stili di guida dei piloti, i consumi di gomme e di carburante, i pit stop e gli eventuali rallentamenti pet bandiere gialle o rosse.<br>
+                Alla fine della gara piloti e squadra ricevono punti per la classifica in base al piazzamento e soldi in base ai criteri degli sponsor, e si ricomincia con una nuova gara.<br>
+                Durante le gare i piloti possono infortunarsi o lasciarci le penne, e la squadra dovrà sostituire il pilota.<br>
+                Alla fine della stagione la squadra riceve soldi in base al piazzamento e ai criteri degli sponsor, e inizia una nuova stagione.<br>
+                Nella nuova stagione si riparte confermando i componenti della squadra a costo 0, oppure ingaggiando del nuovo personale.
+            </p>
+            <hr>
 
-<a href="#top">torna in cima</a>
-		<hr>
-    </div>
-</body>
-</html>
+            <h3 id="00">prepariamo la mod</h3>
+            Dopo aver giocato a Golden Lap per circa 25 ore ho deciso di affrontare la run definitiva: partire con la scuderia con meno fondi iniziali e vedere dove arriverò dopo 10 stagioni.<br>
+            <p>
+                Gli sviluppatori hanno chiaramente reso semplice il modding, creando pure <a href="https://funselektor.notion.site/Golden-Lap-Modding-Documentation">una guida</a> molto dettagliata.<br>
+                Modificando i file .json si possono cambiare molti attributi delle squadre, dei piloti, degli ingegneri e dei caposquadra, oltre creare un calendario di gare non random come nel gioco base.<br>
+                Sono modificabili anche i file .psd che permettono di personalizzare forme e livree delle monoposto, delle divise ma anche dei ritratti di piloti, ingegneri e caposquadra, che nella versione base sono stilizzati. Anche i loghi delle scuderie sono personalizzabili.<br>
+                Per capire il livello di personalizzazione fatevi un giro su <a href="https://steamcommunity.com/app/2052040/workshop/">Steam Workshop</a> e troverete molte mod, alcune delle quali hanno ricreato le decadi "reali" dagli anni 70 ai giorni nostri con un lavoro certosino.<br>
+            </p>
+            <p>
+                <b>La VB Racing</b><br>
+                Con un po' di smanettamento su GIMP ho creato la grafica per la mia squadra: VB Racing.<br>
+                Ne sono abbastanza soddisfatto, non saprei davvero fare di meglio.<br>
+                <img src="VB.png" width="250"><br>
+                <img src="CarVB.png" width="250"><br>
+                <img src="SuitVB.png" width="250">		
+            </p>
+            <a href="#top">torna in cima</a>
+            <hr>
+
+            <h3 id="S01">Stagione 01 - costruiamo la squadra</h3>
+            <p>È il 1970, la mia prima stagione.</p>
+            <p>
+                Con una certa emozione seleziono la mia squadra tra le 10 disponibili e cerco di immaginarmi dove riuscirò ad arrivare...<br>
+                <a href=00a.jpg target="_blank"><img src="00a.jpg" width="400"></a><br>
+                Rapido elenco di equivalenza tra nomi di fantasia e nomi reali delle squadre:<br>
+                <ul>
+                    <li>Ezzolini = Ferrari</li>
+                    <li>LaBrahn = McLaren</li>
+                    <li>Chapman = Lotus</li>
+                    <li>Weyland = Tyrrell</li>
+                    <li>Hemlock = Hesketh</li>
+                    <li>Pope = Williams</li>
+                    <li>Bancroft = Brabham</li>
+                    <li>Vernier = Ligier</li>
+                    <li>April = March</li>
+                    <li>Night = Shadow <i>che io ho rilevato, modificandola nella mia VB Racing</i></li>
+                </ul>
+            </p>
+            <p>
+                Con i pochi soldi che abbiamo è difficile mettere insieme una squadra, anche perché quasi tutti i piloti medio-bassi sono già stati ingaggiati dalle altre scuderie. È il problema di iniziare con la squadra più scarsa: hai pochi soldi e scegli per ultimo.<br>
+            </p>
+            <p>
+                Dopo aver esplorato un po' gli <i>avanzi</i>, abbiamo due opzioni:<br>
+                1) ingaggiare un pilota decente come Piet Cilliers che da solo costa 15$, prendere un buon Mahler come ingegnere decente e tutto il peggio possibile che avanza, e stare su un design dell'auto conservativo<br>
+                <a href=00b.jpg target="_blank"><img src="00b.jpg" width="400"></a><br>
+                <br>
+                2) ingaggiare lo scarsetto ma promettente Artie Von Heim per 9$, mantenere Helm come ingegnere (anche perché è rimasto ben poco ed è meglio evitare un ingegnere incapace) e il resto lo si suddivide tra pilota e caposquadra e un design dell'auto equilibrato<br>
+                <a href=00c.jpg target="_blank"><img src="00c.jpg" width="400"></a>
+            </p>
+            <p>
+                Alla fine spendiamo meno per i piloti e di più per il resto della squadra. I risultati si fanno lavorando assieme! Avanzano soldi per scegliere il design dell'auto equilibrato (14$), che costa più del conservativo (12$) ma che si può potenziare maggiormente durante la stagione.<br>
+            </p>
+            <p>
+                È il momento degli sponsor: stiamo con i piedi per terra e ci affiliamo a <b>MetalTubing</b> (quello più scarso) che mi garantisce maggiori entrate fisse ad ogni gara (3$), ma meno bonus in base al piazzamento (mi basta un 12° posto su 20 auto, a differenza di altri sponsor che chiedono un 8° o un 6° posto).
+            </p>
+            <p>
+                Ed eccoci qui, la VB Racing appena formata, pronta per affrontare la prima stagione della sua storia!<br>
+                <a href=00d.jpg target="_blank"><img src="00d.jpg" width="400"></a>
+            </p>
+            <p>
+                Prima di tuffarci nella stagione, un rapido elenco di equivalenza tra nomi di fantasia e nomi reali dei circuiti:<br>
+                <li>Autódromo Gran Lago = Buenos Aires (ARG)</li>
+                <li>Circuit de Casino = Monaco (MCO)</li>
+                <li>Circuit Eerste = Zolder (BEL)</li>
+                <li>Fascar Park = Mosport (CAN)</li>
+                <li>Francis Hollow = Brands Hatch (GBR)</li>
+                <li>Hopkins Boot = Watkins Glen (USA)</li>
+                <li>Isivinini = Kyalami (ZAF)</li>
+                <li>Muttonchop = Silverstone (GBR)</li>
+                <li>Noordzee = Zandvoort (NED)</li>
+                <li>Ondasrolando = Interlagos (BRA)</li>
+                <li>Potenza = Monza (ITA)</li>
+                <li>Retorcido = Jarama (ESP)</li>
+                <li>Sake Speedway = Fuji (JAP)</li>
+                <li>Schwarzwaldring = Hockenheim (GER)</li>
+                <li>Stretto = Imola (ITA)</li>
+                </i>
+            </p>
+            <a href="#top">torna in cima</a>
+            <hr>
+
+            <h2 id="S01E01">S01E01 - Circuit de Casino</h2>
+            <p>
+                Iniziamo male: il primo circuito in cui verosimilmente partiremo nella metà inferiore dello schieramento è quello in cui è più difficile fare sorpassi. Servirebbe partire con uno sterzo migliore, ma abbiamo finito tutti i soldi per costruire una squadra decente e non possiamo spenderne altri prima della gara. Ci affideremo al nostro ingegnere e alla sua capacità di regolare al meglio le auto durante le qualifiche. Poi chissà, se ci fossero incidenti, o se iniziasse a piovere, magari potremmo guadagnare posizioni con una buona strategia...
+            </p>
+            <p>
+                <b>L'obiettivo minimo</b> per questa prima gara è chiudere almeno al 12° posto per incassare i soldi bonus dello sponsor. Inutile pensare a chiudere nei primi 10 per dei punti iridati.
+            </p>
+            <h3>QUALI</h3>
+            <p>
+                Usciremo sempre come prima squadra dai box: avere pista libera aiuta a fare tempi migliori, ma non è il fine della prima parte delle qualifiche anche perché la pista non è ben gommata.
+            </p>
+            <a href=01Q01.jpg target="_blank"><img src="01Q01.jpg" width="400"></a><br>
+            <p>
+                No, l'obiettivo è fare più giri possibili per prendere confidenza con il tracciato e cercare di migliorare l'auto il più possibile: un giro di lancio (OUT lap), un giro cronometrato, un giro di rientro ai box (IN lap).
+            </p>
+            <p>
+                Dopo il primo giro siamo P6 [<b>VHM</b>] e P7 [<b>ROD</b>]. Un risultato molto positivo, soprattutto perché su questo tracciato è difficile sorpassare: partire tra i mid-team ci permetterebbe di chiudere almeno in P12, risultato minimo per il pagamento degli sponsor.
+            </p>
+            <p>
+                Ma siamo solo al primo giro delle qualifiche del primo GP, andiamo con ordine.
+            </p>
+            <p>
+                Dopo un giro è il momento di regolare l'auto: le caratteristiche del circuito mi fanno propendere per potenziare lo sterzo ovviamente. E così farò per il resto delle qualifiche, fino ad arrivare al Golden Tune, cioè ad aver migliorato al massimo questo componente dell'auto.
+            </p>
+            <a href=01Q02.jpg target="_blank"><img src="01Q02.jpg" width="400"></a><br>
+            <p>
+                Alcune guide suggeriscono di migliorare prima la parte meno perfomante della propria auto, ma io preferisco partire prima dal tracciato e poi eventualmente sistemare difetti dell'auto.
+            </p>
+            <p>
+                Dal secondo giro in poi inizia ad esserci traffico, e se si rimane imbottigliati non è detto che i propri tempi migliorino. Ma poco importa, perché è tutta esperienza da riportare ai box, per poi migliorare l'auto e ripartire di nuovo!
+            </p>
+            <a href=01Q03.jpg target="_blank"><img src="01Q03.jpg" width="400"></a><br>
+            <p>
+                Dopo il 2° giro siamo P5 [<b>VHM</b>] e P8 [<b>ROD</b>], il che mi fa ben sperare sia per le qualifiche sia per la gara.
+            </p>
+            <p>
+                Al 3° giro <b>VHM</b> non migliora ed è P8 (non era <b>concentrato</b>, una delle caratteristiche base dei piloti oltre alla velocità) mentre <b>ROD</b> arriva a P6. Anche le altre squadre stanno migliorando le loro auto: bisogna stare al passo!
+            </p>
+            <p>
+                Ai box l'ingegner Mahler fa raggiungere a <b>VHM</b> e <b>ROD</b> il Golden Tune sullo sterzo e inizia a potenziare l'accelerazione, altro tratto fondamentale per questo circuito.
+            </p>
+            <a href=01Q04.jpg target="_blank"><img src="01Q04.jpg" width="400"></a><br>
+            <p>
+                Dopo 4 giri siamo P10 [<b>VHM</b>] e P11 [<b>ROD</b>]. C'è giusto il tempo di un'ultima regolazione e di un ultimo fondamentale giro: l'ideale sarà partire all'ultimo momento utile, con pista più gommata possibile ma evitando il traffico, altrimenti sarà un giro sprecato e finiremo in fondo allo schieramento.
+            </p>
+            <a href=01Q05.jpg target="_blank"><img src="01Q05.jpg" width="400"></a><br>
+            <p>
+                All'ultimo pit [<b] arriva quasi al Golden Tune prue dell'accelerazione, e ora ha un'auto più competitiva di [<b>VHM</b>]. La sfida interna si deciderà all'ultimo giro di qualifiche.
+            </p>
+            <p>
+                Ci vogliono circa 2'30'' per fare un OUT lap prima di lanciarsi nel giro di qualifiche, bisogna stare attenti anche a come si comportano le altre auto.
+            </p>
+            <a href=01Q06.jpg target="_blank"><img src="01Q06.jpg" width="400"></a><br>
+            <p>
+                VHM parte prima con pista abbastanza libera e chiude inizialmente P9 per poi essere sorpassato da Villalba [<b>VIL</b>] su Hemlock, e dal compagno di squadra <b>ROD</b> partito subito dopo che ha chiuso un giro <b>concentrato</b>.
+            </p>
+            <p>
+                Risultato finale:
+				<ul>
+                <li>P9 <b>ROD</b></li>
+                <li>P11 <b>VHM</b></li>
+				</ul>
+            </p>
+            <a href=01Q07.jpg target="_blank"><img src="01Q07.jpg" width="400"></a><br>
+            <p>
+                <b>Le dichiarazioni a caldo:</b><br>
+                Prima delle qualifiche non ci aspettavamo di certo di essere a metà schieramento, anche se i primi giri ci hanno gasato non poco!<br>
+                Durante le qualifiche non siamo riusciti a mettere a punto l'auto e il divario tecnico si è fatto sentire sul lungo periodo.<br>
+                Peccato per l'ultimo giro di <b>VHM</b>, poteva migliorare ulteriormente la sua posizione, ma ci ha pensato <b>ROD</b> a piazzare una nostra auto in top 10.<br>
+                Ora si tratta di creare una strategia ottimale per la gara di domani: la gara si deciderà ai box.
+            </p>
+
+            <h3>RACE</h3>
+            <p>
+                Sorpresa! Piove. E pioverà tutta la gara.<br>
+                <a href=01R00.jpg target="_blank"><img src="01R00.jpg" width="400"></a>
+            </p>
+            <p><b>I TRATTI</b></p>
+            <p>
+                Prima di lanciarci nella gara, dobbiamo parlare dei "tratti" dei piloti.
+			</p>
+			<p>
+				Ogni pilota può avere alcuni "tratti", cioè delle caratteristiche che influiscono in positivo o in negativo sulle sue capacità, sulla sua crescita e sul suo prezzo.
+            </p>
+            <p>
+                Il mio <b>ROD</b> è un "corsaro" (è costato di meno) e "mediatore" (concentrazione maggiore), <b>VHM</b> invece è "attento" (meno probabilità di incidente).
+            </p>
+            <p>
+                Mi sono preso un po' di tempo per guardare i tratti degli altri piloti.
+            </p>
+			<a href=01R01.jpg target="_blank"><img src="01R01.jpg" width="400"></a>
+            <p>
+                Per questa gara ad esempio è importante sapere che Maldonado [<b>MAL</b>] ha un bonus su pista bagnata e dunque sarà più forte, ma poco importa: è davanti a noi e in un auto più performante (Chapman).
+            </p>
+            <p>
+                Villalba [<b>VIL</b>] e Steiner [<b>STE</b>] che si sono qualificati P10 e P12 hanno un bonus quando sono sotto P10, dunque sarà dura per noi averli alle calcagna. Stesso discorso per Acosta [<b>ACO</b>], che però parte P18 e probabilmente è nel team più scarso (April).
+            </p>
+            <p>
+                In griglia abbiamo quattro "spericolati" (aumentato rischio di incidente): Laframboise [<b>LFR</b>], Woods [<b>WDS</b>], Schaub [<b>SCH</b>] e Campbell [<b>CAM</b>].
+            </p>
+            <p>
+                Anche i circuiti hanno i <b>tratti</b>: Circuit de Casino (Monaco) è "dissestato" (+20% probabilità di incidente), "stretto" (-25% sorpasso, -25% prestazioni motore, +20% incidente), e "gioiello della corona" (compare in ogni stagione, gli sponsor pagano +2$).
+            </p>
+            <p>
+                Mi aspetto abbastanza incidenti, e conseguenti bandiere gialle da sfruttare per pit stop in cui perdere meno tempo
+            </p>
+            <p><b>STRATEGIA</b></p>
+            <p>
+                Tempo di impostare la strategia!
+            </p>
+            <p>
+                Il tracciato sarà bagnato fin dai primi giri, e le previsioni meteo che ci fanno vedere fino a quasi metà gara danno pioggia, con asfalto sempre più bagnato
+            </p>
+            <p>
+                Le gomme da bagnato sono <b>Intermedie</b> (meglio performanti su asfalto poco o mediamente bagnato) o <b>Wet</b> (per asfalto molto bagnato): inizieremo con le <b>Inter</b>, che terranno per circa 15 giri, poi passeremo alle <b>Wet</b>.<br>
+				L'alternativa potrebbe essere partire con gomma asciutta (<b>Soft</b>, <b>Medium</b> o <b>Hard</b>) e fare un pit stop per montare le <b>Inter</b>, ma la pista rimarrà poco bagnata per troppi pochi giri.
+            </p>
+			<a href=01R02.jpg target="_blank"><img src="01R02.jpg" width="400"></a>
+			<p>
+				<b>IN PISTA!</b>
+			</p>
+			<p>
+				Cinque luci rosse si accendono lentamente una dopo l'altra...<br>
+				...e si spengono!<br>
+				<a href=01R03.jpg target="_blank"><img src="01R03.jpg" width="400"></a><br>
+				È iniziato il primo GP della prima stagione della VB Racing: in bocca al lupo ai piloti per la guida, all'ingegnere per le strategie e al caposquadra per i pit-stop!
+			</p>
+			<p>
+				<b>LAP 02</b><br>
+				<a href=01R04.jpg target="_blank"><img src="01R04.jpg" width="400"></a><br>
+				Da P9 e P11 passiamo a P11 e P12: ci passano <b>VIL</b> e <b>SCH</b>. Non benissimo, ma siamo a ridosso di P10, che significa punti iridati!<br>
+				I piloti spingono molto, il che significa tempi migliori ma anche maggior consumo di gomme e di carburante.<br>
+				Li ho anche lasciati gareggiare tra di loro: nessun ordine di scuderia, liberi di sorpassarsi. Dentro di me so che <b>VHM</b> è più abile di <b>ROD</b>, ma voglio che si veda sulla pista.
+			</p>
+			<p>
+				<b>LAP 11</b><br>
+				<a href=01R05.jpg target="_blank"><img src="01R05.jpg" width="400"></a><br>
+				Nonostante stiano spingendo sia nella <b>Strategia di Guida</b> (più velocità, più consumo di gomme), sia nella <b>Modalità Motore</b> (più accelerazione, più consumo di benzina) i nostri continuano a superare e a farsi superare dagli avversari diretti <b>SCH</b> e <b>MAL</b>.<br>
+				La barra rossa accanto al loro nome ci indica che sono molto stressati da questa guida aggressiva e sono ad aumentato rischio di incidente.
+            </p>
+			<p>
+				<b>LAP 15</b><br>
+				<a href=01R06.jpg target="_blank"><img src="01R06.jpg" width="400"></a><br>
+				Primi pit stop per alcuni dei team in testa. Le <b>Inter</b> stanno tenendo bene, secondo me ancora 3 o 4 giri dovrebbero reggere.<br>
+				Andiamo avanti!
+			</p>
+			<p>
+				<b>LAP 16</b><br>
+				<a href=01R07.jpg target="_blank"><img src="01R07.jpg" width="400"></a><br>
+				Pit per <b>VIL</b> e <b>SCH</b> che ci erano davanti!<br>
+				C'è poco tempo per pensare! I nostri piloti sono vicini tra di loro ed è necessario diversificare la strategia, per evitare di fare pit-stop simultanei: il pilota in coda perderebbe troppo tempo!<br>
+				<b>VHM</b> si ferma per montare le <b>Wet</b>, mentre <b>ROD</b> continua per almeno un altro giro, spingendo al massimo per guadagnare più tempo possibile fintanto che le <b>Inter</b> reggono.<br>
+				<a href=01R08.jpg target="_blank"><img src="01R08.jpg" width="400"></a>
+			</p>
+			<p>
+				<b>LAP 19</b><br>
+				<a href=01R09.jpg target="_blank"><img src="01R09.jpg" width="400"></a><br>
+				Anche <b>KUK</b> della <b>Pope</b> si è fermato per montare le <b>Wet</b> e ci ritroviamo in fila alternata con il team che sembra essere il nostro avversario per P10.<br>
+				<ul>
+					<li>P11 <b>KUK</b></li>
+					<li>P12 <b>VHM</b></li>
+					<li>P13 <b>SCH</b></li>
+					<li>P14 <b>ROD</b></li>
+				</ul>
+				Tutti molto, molto vicini.<br>
+				La strategia è la stessa: almeno un altro pit-stop con gomme <b>Wet</b>, dato che le previsioni del tempo danno pista molto bagnata fino ad almeno il 4'° giro.
+			</p>
+			<p>
+				<b>LAP 21-30</b><br>
+				<a href=01R10.jpg target="_blank"><img src="01R10.jpg" width="400"></a><br>
+				<b>ROD</b> ha un guizzo e supera <b>SCH</b> e il nostro <b>VHM</b>, ma nei giri successivi viene superato di nuovo.<br>
+				<a href=01R11.jpg target="_blank"><img src="01R11.jpg" width="400"></a><br>
+				Siamo P12 con <b>ROD</b> che si lamenta di non riuscire a passare <b>KUK</b>, e P13 con <b>VHM</b>.
+			</p>
+			<p>
+				<b>LAP 31</b><br>
+				<a href=01R12.jpg target="_blank"><img src="01R12.jpg" width="400"></a><br>
+				Decido di invertire le auto e dare campo libero a <b>VHM</b> per provare a superare <b>KUK</b>.<br>
+				Se non ce la farà invertiremo nuovamente le posizioni.
+			</p>
+			<p>
+				<b>LAP 33</b><br>
+				<a href=01R13.jpg target="_blank"><img src="01R13.jpg" width="400"></a><br>
+				<b>BANDIERA GIALLA</b> - <b>LOV</b> si è schiantata, non ci si potrà sorpassare e si dovrà andare più lenti.<br>
+				In questi casi i pit-stop sono più economici in termini di tempo perso, ma le gomme non sono ancora al 50%. Inoltre cambiando ora le gomme dovremo comunque fare un altro pit... A meno di decidere di chiudere la gara sulle seconde <b>Wet</b> facendole durare il più possibile. Ma quanto tempo si perderebbe?<br>
+				Troppi pensieri, vediamo cosa faranno le due <b>Pope</b> davanti a noi. Dietro c'è una <b>Hemlock</b> a più di 40 secondi, potremo fermarci "gratis" e non perdere posizioni.
+				<a href=01R14.jpg target="_blank"><img src="01R14.jpg" width="400"></a><br>
+				Entrambe le <b>Pope</b> si fermano!
+			</p>
+            <a href="#top">torna in cima</a>
+            <hr>
+        </div>
+    </body>
